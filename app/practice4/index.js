@@ -96,6 +96,7 @@ const TabBarNavigator = CustomTabNavigator({
 				borderTopColor: 'blue',
 				borderTopWidth: 1,
 			},
+			showIcon: true
 		},
 		lazy: true
 	});

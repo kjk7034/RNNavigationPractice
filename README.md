@@ -69,6 +69,7 @@ export default AppNavigator = TabNavigator({
 				borderTopColor: 'blue',
 				borderTopWidth: 1,
 			},
+			showIcon: true
 		},
 		lazy: true
 	});
@@ -79,6 +80,8 @@ RouteConfigs에는 각 라우터 옵션을 설정했고, TabNavigatorConfig에�
 여기서 lazy의 설정에 따라 설정한 라우터 들의 render를 결정한다.(모두 미리 렌더를 하던가, 클릭 시 해당 라우터만 렌더를 한다.)
 
 tabBarPosition은 top, bottom에 따라서 제공하는 tabBarOptions이 다르다. 자세한 내용은 [TabNavigatorConfig](https://reactnavigation.org/docs/navigators/tab#TabNavigatorConfig)를 참고.
+
+android에서는 아이콘이 보이지 않는 경우, tabBarOptions에서 showIcon을 true로 설정하면 된다.
 
 ## Practice2
 기본적인 4개의 Tab으로 이뤄진 TabNavigator에 각각의 탭에 StackNavigator 작업.
