@@ -1,6 +1,6 @@
 # ReactNative react-navigation Practice
 
-ReactNative에서 네비게이션을 사용할때 0.43.x까지는 Navigator Component가 있었지만, 0.44 이상에서는 없어졌다.
+ReactNative에서 네비게이션을 사용할 때 0.43.x까지는 Navigator Component가 있었지만, 0.44 이상에서는 없어졌다.
 
 [Navigation Guide](https://facebook.github.io/react-native/docs/navigation.html)를 보면 다음과 같은 문구가 있다.
 
@@ -13,7 +13,7 @@ React Navigation provides an easy to use navigation solution, with the ability t
 
 react-navigation의 사용법이나 자세한 내용은 [reactnavigation.org](https://reactnavigation.org/)를 참고.
 
-해당 예제를 보고, 더 좋은 방법이나 다른 방법, 코드에 대한 조언등 여러가지의 의견은 언제든지 환영합니다. :)
+해당 예제를 보고, 더 좋은 방법이나 다른 방법, 코드 등 여러 의견을 환영합니다. :)
 
 ## react-navigation 설치
 ```
@@ -21,7 +21,7 @@ npm install react-navigation
 ```
 
 ## Practice 진행 전
-index.ios.js, index.android.js를 다음과 같이 원하는 Practice명을 변경하고 확인.
+index.ios.js, index.android.js를 다음과 같이 원하는 Practice 명을 변경하고 확인.
 ```
 import App from './app/폴더명(Practice명)/index';
 ```
@@ -76,7 +76,7 @@ export default AppNavigator = TabNavigator({
 react-navigation의 TabNavigator(RouteConfigs, TabNavigatorConfig)을 이용했다.
 
 RouteConfigs에는 각 라우터 옵션을 설정했고, TabNavigatorConfig에는 해당 Tab 네비게이션 옵션을 설정했다.<br />
-여기서 lazy의 설정에 따라 설정한 라우터 들의 render를 결정한다.(모두 미리 렌더를 하던가, 클릭시 해당 라우터만 렌더를 한다.)
+여기서 lazy의 설정에 따라 설정한 라우터 들의 render를 결정한다.(모두 미리 렌더를 하던가, 클릭 시 해당 라우터만 렌더를 한다.)
 
 tabBarPosition은 top, bottom에 따라서 제공하는 tabBarOptions이 다르다. 자세한 내용은 [TabNavigatorConfig](https://reactnavigation.org/docs/navigators/tab#TabNavigatorConfig)를 참고.
 
@@ -147,11 +147,11 @@ const { goBack, state } = this.props.navigation
 	goBack()
 }} />
 ```
-state를 통해서 받은 파마리터 사용.
+state를 통해서 받은 파마리터 사용.<br />
 goBack를 통해서 back
 
 ## Practice3
-작업을 진행하면서 TabNavigator위의 Global Modal이 필요하여 작업함.<br />
+작업을 진행하면서 TabNavigator 위의 Global Modal이 필요하여 작업함.<br />
 (Login, 링크 클릭시 앱안에서의 Custom 웹뷰 등등 다양한 용도로 사용)
 
 ### 구조
@@ -195,7 +195,7 @@ StackNavigator에서 StackNavigatorConfig의 mode를 'modal'로 추가하여 사
 
 작업을 진행하면서 TabNavigator를 덮는 레이어가 필요하여 진행.
 
-**처음에는 페이지내에서 Modal Component를 사용하려 했으나, Modal Component에서 Practice3에서 만들었던 ModalScreen을 띄울 수 없는 문제가 발생하여 다음과 같이 레이어 형태로 작업하게 됨. (혹시 다른 방법이나 더 나은 방법이 있으면 피드백 부탁드립니다.)**
+**처음에는 페이지 내에서 Modal Component를 사용하려 했으나, Modal Component에서 Practice3에서 만들었던 ModalScreen을 띄울 수 없는 문제가 발생하여 다음과 같이 레이어 형태로 작업하게 됨. (혹시 다른 방법이나 더 나은 방법이 있으면 피드백 부탁드립니다.)**
 
 ### 구조
 - TabNavigator
